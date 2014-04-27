@@ -23,7 +23,10 @@ https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/many_to_m
 ## Release 4: Design your own Schema
 Description of what you're modeling: 
 
-<!-- display your one-to-one image inline here -->
+<!-- I did a schema of students and classes -->
+https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/my_one_to_many.png
+
+
 <!-- display your many-to-many image inline here -->
 
 ## Release 5: Reflection
