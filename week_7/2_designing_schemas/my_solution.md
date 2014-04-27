@@ -13,7 +13,7 @@ https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/2_one_to_
 
 
 ## Release 2: One to One Schema
-<!-- display your image inline here -->
+https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/one_to_one.png
 
 
 ## Release 3: Many to Many Schema
