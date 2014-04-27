@@ -17,7 +17,7 @@ https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/one_to_on
 
 
 ## Release 3: Many to Many Schema
-<!-- display your image inline here -->
+https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/many_to_many.png
 
 
 ## Release 4: Design your own Schema
