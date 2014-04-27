@@ -1,7 +1,7 @@
 # U3.W7: Designing Schemas
 
 
-#### I worked on this challenge [by myself, with: ]
+#### I worked on this challenge by myself
 
 
 ## Release 0: Student Roster Schema
@@ -27,6 +27,11 @@ Description of what you're modeling:
 https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/my_one_to_many.png
 
 
-<!-- display your many-to-many image inline here -->
+<!-- I did a many to many schema with musicians, musician's albums, and albums -->
+
+https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/my_many_to_many.png
 
 ## Release 5: Reflection
+
+I enjoyed this challenge. It was very straightforward and it was fun to put the database concepts to use.
+
