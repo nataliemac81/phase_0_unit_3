@@ -5,7 +5,7 @@
 
 
 ## Release 0: Student Roster Schema
-<!-- display your image inline here -->
+https://github.com/nataliemac81/phase_0_unit_3/blob/master/week_7/imgs/1_student_roster.png
 
 
 ## Release 1: One to Many Schema
