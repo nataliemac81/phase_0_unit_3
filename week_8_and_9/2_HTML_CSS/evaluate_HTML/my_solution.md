@@ -48,3 +48,7 @@ You know, I think there is some in there. I’m not gonna lie and say I know com
 what you've read?
 
 Overall, I’m not really feeling this HTML or CSS. The use of HTML tables alone was enough to turn me off. I feel like without the tables the HTML code would be much more readable and not feel all cluttered and jumbled. It just need to be simplified.  The CSS is alright but maybe they could have used a universal selector for the Verdana body font since they used it over again with other elements. Also, not sure why the writers used pt. instead of ems or pixels. That’s not really a criticism or fault though, I just am not sure why they would prefer one over the other.
+
+Reflection:
+
+I didn't have too much trouble with this challenge. It was actually pretty cool to evaluate a site and actually being able to tell what the hell is going on with most of the code! I can definitely see how far I've come. I had to look up a few things, mostly how to download the CSS from a site and best practices stuff. Overall it was a good experience and I feel pretty confident with the learning objectives.
