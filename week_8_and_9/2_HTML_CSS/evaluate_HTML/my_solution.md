@@ -15,7 +15,9 @@ Did you like the way they used HTML tags?  Please use examples with your argumen
 separate it into a CSS file? Or did they do both?  Again, include examples.
  
 There was very few formatting instances in the HTML. 
-    One example: <b><a href="news">Hacker News</a></b> 
+    One example: 
+    
+    <b><a href="news">Hacker News</a></b> 
 
 4) Did the authors include anything you didn't immediately understand? 
 If so, what?
