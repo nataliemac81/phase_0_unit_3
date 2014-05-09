@@ -58,7 +58,7 @@ gradebook.getAverage = function(name){
 
 // __________________________________________
 // Refactored Solution
- As the initial solution seems pretty concise, I did not feel the need to refactor it.
+// As the initial solution seems pretty concise, I did not feel the need to refactor it.
 
 
 
