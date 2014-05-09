@@ -7,20 +7,23 @@ require 'sqlite3'
 
 $db = SQLite3::Database.open "congress_poll_results.db"
 
-
 def print_arizona_reps
   puts "AZ REPRESENTATIVES"
   az_reps = $db.execute("SELECT name FROM congress_members WHERE location = 'AZ'")
   az_reps.each { |rep| puts rep }
 end
 
+
 def print_longest_serving_reps(minimum_years)  #sorry guys, oracle needs me, i didn't finish this!
   puts "LONGEST SERVING REPRESENTATIVES"
-  puts $db.execute("SELECT name FROM congress_members WHERE years_in_congress > #{minimum_years}")
+  reps =  $db.execute("SELECT name FROM congress_members WHERE years_in_congress > #{minimum_years}")
+  reps.each { |rep, years| puts "#{rep} - #{years} years" }
 end
 
 def print_lowest_grade_level_speakers
   puts "LOWEST GRADE LEVEL SPEAKERS (less than < 8th grade)"
+  reps = $db.execute("SELECT name, grade_current FROM congress_members WHERE grade_current < #{grade_level}")
+  reps.each { |rep, grade| puts "#{rep}, #{grade}" }
 end
 
 def print_separator
@@ -29,21 +32,35 @@ def print_separator
   puts 
 end
 
+def print_reps
+  puts "#{state.upcase} REPRESENTATIVES"
+  reps = $db.execute("SELECT name FROM congress_members WHERE location = '#{state}'")
+  reps.each { |rep| puts rep }
+end
+
 
 print_arizona_reps
+print_separator
 
+print_reps('NJ')
+print_separator
+
+print_reps('NY')
+print_separator
+
+print_reps('ME')
+print_separator
+
+print_reps('FL')
+print_separator
+
+print_reps('AK')
 print_separator
 
 print_longest_serving_reps(35)
-# TODO - Print out the number of years served as well as the name of the longest running reps
-# output should look like:  Rep. C. W. Bill Young - 41 years
-
 print_separator
-print_lowest_grade_level_speakers 
-# TODO - Need to be able to pass the grade level as an argument, look in schema for "grade_current" column
 
-# TODO - Make a method to print the following states representatives as well:
-# (New Jersey, New York, Maine, Florida, and Alaska)
+print_lowest_grade_level_speakers(8)
 
 
 ##### BONUS #######
@@ -60,10 +77,18 @@ print_lowest_grade_level_speakers
 
 
 # REFLECTION- Include your reflection as a comment below.
-# How does the sqlite3 gem work?  What is the variable `$db` holding?  
-# Try to use your knowledge of ruby and OO to decipher this as well as h
-# ow the `#execute` method works.  Take a stab at explaining the line 
-# `$db.execute("SELECT name FROM congress_members WHERE years_in_congress 
+# How does the sqlite3 gem work?  
+# The sqlite3 gem lets ruby access a database.
+
+#What is the variable `$db` holding? 
+# `$db` is a global variable holding a database.
+
+# Try to use your knowledge of ruby and OO to decipher this as well as how the `#execute` method works. 
+# The execute method carries out the given sql statement.
+
+#  Take a stab at explaining the line `$db.execute("SELECT name FROM congress_members WHERE years_in_congress 
 #   > #{minimum_years}")`.  Try to explain this as clearly as possible for 
-# your fellow students.  
+# your fellow students. 
+#This line selects the names from congress members who have served more years in congress than the minimum_years input.
+
 # If you're having trouble, find someone to pair on this explanation with you.
