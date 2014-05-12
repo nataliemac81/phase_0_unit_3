@@ -16,10 +16,10 @@
 	   ...> created_at DATETIME NOT NULL,
 	   ...> updated_at DATETIME NOT NULL);
 	   
-       SELECT * FROM rappers
-   ...> JOIN album_info
-   ...> ON rappers.id=album_info.name_id;
-   
+	       SELECT * FROM rappers
+	   ...> JOIN album_info
+	   ...> ON rappers.id=album_info.name_id;
+	   
 	       id          name        region      created_at           updated_at           id          name_id          label        popular_album  created_at           updated_at         
 	    ----------  ----------  ----------  -------------------  -------------------  ----------  ----------          -----------  -------------  -------------------  -------------------
 	    1           Jay Z       East        2014-05-11 19:28:43  2014-05-11 19:28:43  1           1                   Roc-A-Fella  The Blueprint  2014-05-12 03:48:06  2014-05-12 03:48:06
